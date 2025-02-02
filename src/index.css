@@ -55,7 +55,6 @@ code {
   
 }
 
-
 textarea{
   border:none;
   resize:none;
@@ -86,16 +85,19 @@ textarea:focus{
 
 }
 .note:hover .delete{
-  background-color:rgb(247, 244, 34);}
+  /* background-color:rgb(247, 244, 34); */
+  background: transparent;
+}
 .foot{
   display: flex;
   justify-content: space-between;
 }
 .delete{
   border:none;
-  background-color: #fef68a;
+  /* background-color: #fef68a; */
+  background: transparent;
   cursor: pointer;
-  color:rgb(62, 240, 86);
+  color:rgb(60, 60, 60);
 }
 .search{
   display: flex;
@@ -105,7 +107,7 @@ textarea:focus{
   border-radius: 25px;
   padding:8px;
   margin-bottom: 1.5em;
-  color:grey;
+  color:rgb(46, 46, 46);
   /* border:1px solid red; */
 }
 .search input{

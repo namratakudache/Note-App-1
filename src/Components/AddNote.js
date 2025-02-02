@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const AddNote = ({handleAddNote}) => {
     const [noteText, setNoteText] =useState(''); //default kept as empty string
-    const handleChange= (event) =>{  //creating handlechange function,react will automatically pas the value event as argument
+    const handleChange= (event) =>{  //creating handlechange function,react will automatically pass the value event as argument
         if(characterLimit - event.target.value.length >= 0){
             setNoteText(event.target.value);//updates the value of textarea everytime the text changes 
         }
@@ -15,6 +15,8 @@ const AddNote = ({handleAddNote}) => {
             setNoteText(''); // this will reset the note to empty after saving 
         } 
     }
+ 
+      
   return (
     <div className='note new'>
     <textarea     //user can add note

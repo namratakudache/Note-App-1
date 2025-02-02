@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-const Note = ( {id, text, date ,handleDeleteNote}) => {
+const Note = ( {id, text, date ,handleDeleteNote,color}) => {
   return (
-    <div className='note'>
+    <div className='note' style={{backgroundColor:color}}>
       <span>{text}</span>
       <div className='foot'>
         <small>{date}</small>

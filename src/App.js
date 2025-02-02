@@ -6,36 +6,50 @@ import Search from './Components/Search';
 import Header from './Components/Header';
 
 const App = () => {
+  const getRandomColor = () => {
+    const colors = ["#C4DFDF", "#E49393", "#AA77FF", "#ECCDB4", "#F7C8E0", "#A0D8B3"]; // Define an array of color values
+    const randomIndex = Math.floor(Math.random() * colors.length); // Generate a random index
+    return colors[randomIndex]; // Return the color at the random index
+  };
+  
   const [notes,setNotes ] =useState([//useState hook to hold array of notes
+
+
       {
        id:nanoid(),
        text:" Complete the project",
        date:"15/05/2023",
+       color: getRandomColor(),
       },
       {
       id:nanoid(),
       text:"Pick up the grocreies",
       date:"1/05/2023",
+      color: getRandomColor(),
       },
       {
         id:nanoid(),
         text:"Drink more water",
         date:"8/05/2023",
+        color: getRandomColor(),
       },
       {
           id:nanoid(),
           text:" This is my forth Note",
           date:"6/05/2023",
+          color: getRandomColor(),
       },
       {
             id:nanoid(),
             text:" This is my fifth Note",
             date:"7/05/2023",
+            color: getRandomColor(),
       },
       {
         id:nanoid(),
         text:" This is my sixth Note",
         date:"5/05/2023",
+        color: getRandomColor(),
       },
 
 ]);
